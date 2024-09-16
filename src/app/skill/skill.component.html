@@ -1,0 +1,79 @@
+<div class="container my-4">
+  <h1 class="mb-4 text-center">Skills</h1>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row">
+        <div *ngFor="let skill of skillsColumn1" class="col-12 mb-4">
+          <section>
+            <h2>{{skill.name}}</h2>
+            <h4>{{skill.level}}</h4>
+            <div class="rating">
+              <div class="bar">
+                <div [ngStyle]="{'width': skill.rating + '%'}"></div>
+              </div>
+              <div>{{skill.rating}}%</div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="row">
+        <div *ngFor="let skill of skillsColumn2" class="col-12 mb-4">
+          <section>
+            <h2>{{skill.name}}</h2>
+            <h4>{{skill.level}}</h4>
+            <div class="rating">
+              <div class="bar">
+                <div [ngStyle]="{'width': skill.rating + '%'}"></div>
+              </div>
+              <div>{{skill.rating}}%</div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 
+<div class="container d-flex justify-content-center">
+  <div class="row">
+    <div class="col-lg-6">
+      <section class="skills-chart">
+        <div class="skill">
+          <h3 class="skill__type">HTML5 </h3>
+          <div class="skill__outer-bar">
+            <div class="skill__inner-bar skill__inner-bar--90"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h3 class="skill__type">Javascript</h3>
+          <div class="skill__outer-bar">
+            <div class="skill__inner-bar skill__inner-bar--80"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-lg-6">
+      <section class="skills-chart">
+        <div class="skill">
+          <h3 class="skill__type">Photoshop</h3>
+          <div class="skill__outer-bar">
+            <div class="skill__inner-bar skill__inner-bar--70"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h3 class="skill__type">Photoshop</h3>
+          <div class="skill__outer-bar">
+            <div class="skill__inner-bar skill__inner-bar--70"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div> -->
